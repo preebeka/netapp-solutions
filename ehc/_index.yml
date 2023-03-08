@@ -70,7 +70,7 @@ indexpage:
         
         - title: "Hybrid Multicloud Solutions for GCVE"
           url: /gcp/gcp-solutions.html
-        - title: "Region Support for NetApp CVS NFS Datastores in GCP"
+        - title: "Region Support for NetApp CVS NFS Datastores in Google Cloud"
           url: /gcp/gcp-regions.html
         - title: "Security overview - NetApp CVS in Google Cloud"
           url: /ncvs/ncvs-gc-overview.html
