@@ -21,6 +21,8 @@ indexpage:
       links:
         - title: "Application Disaster Recovery with SnapCenter, Cloud Volumes ONTAP and Veeam Replication"
           url: /gcp-app-dr-sc-cvo-veeam.html
+        - title: "Application Consistent Disaster Recovery with NetApp SnapCenter and Veeam Replication to NetApp CVS on GCVE"
+          url: /gcp-app-dr-sc-cvs-veeam.html
        
     - title: "Workload Migration Solutions"
       links:
