@@ -45,7 +45,7 @@ indexpage:
 #
     - title: "Additional Information"
       links:
-        - title: "Region Support for NetApp CVS NFS Datastores in GCP"
+        - title: "Region Support for NetApp CVS NFS Datastores in Google Cloud"
           url: /gcp-regions.html
         - title: "Google Cloud VMware Engine with NetApp Cloud Volumes Service"
           url: https://www.netapp.com/google-cloud/google-cloud-vmware-engine-registration/
