@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: ai/oai_bpod_architecture.html
+keywords: NetApp AI, AI, Artificial Intelligence, ML, Machine Learning, NVIDIA, NVIDIA AI Enterprise, NVIDIA BasePOD, NVIDIA DGX
+summary: ONTAP AI with NVIDIA DGX BasePOD - Architecture
+---
+
+= ONTAP AI with NVIDIA DGX BasePOD - Architecture
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./../media/
+
+== PUT STUFF HERE!!
+
+
+link:oai_bpod_sizing.html[Next: Sizing Guidance.]
