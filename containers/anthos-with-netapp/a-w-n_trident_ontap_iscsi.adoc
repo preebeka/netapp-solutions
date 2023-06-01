@@ -13,6 +13,7 @@ keywords: Trident, Astra Trident, ONTAP, AFF, FAS, iSCSI
 :linkattrs:
 :imagesdir: ./../../media/
 
+[.lead]
 To enable Trident integration with the NetApp ONTAP storage system, you must create a backend that enables communication with the storage system.
 
 . There are sample backend files available in the downloaded installation archive in the `sample-input` folder hierarchy. For NetApp ONTAP systems serving iSCSI, copy the `backend-ontap-san.json` file to your working directory and edit the file.
@@ -109,4 +110,4 @@ NAME    STATUS   VOLUME                                     CAPACITY   ACCESS MO
 basic   Bound    pvc-7ceac1ba-0189-43c7-8f98-094719f7956c   1Gi        RWO            basic-csi      3s
 ----
 
-link:a-w-n_trident_element_iscsi.html[Next: NetApp Element iSCSI.]
+link:a-w-n_overview_advanced.html[Next: Advanced Configurations Options for Anthos.]

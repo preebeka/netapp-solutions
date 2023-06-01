@@ -18,6 +18,7 @@ summary: With NetApp VDS, administrators can delegate tasks to others. They can 
 // 2020-09-24 13:21:46.235765
 //
 
+[.lead]
 With NetApp VDS, administrators can delegate tasks to others. They can connect to deployed servers to troubleshoot, view logs, and run audit reports. While assisting customers, helpdesk or level-3 technicians can shadow user sessions, view process lists, and kill processes if required.
 
 For information on VDS logfiles, see the https://docs.netapp.com/us-en/virtual-desktop-service/guide_troubleshooting_failed_VDS_actions.html[Troubleshooting Failed VDA Actions page^].
@@ -28,7 +29,7 @@ If you would like to manually clone a server, see the https://docs.netapp.com/us
 
 To automatically increase the VM disk size, see the https://docs.netapp.com/us-en/virtual-desktop-service/guide_auto_add_disk_space.html[Auto-Increase Disk Space Feature page^].
 
-To identify the gateway address to manually configure the client, see the https://docs.netapp.com/us-en/virtual-desktop-service/guide_user_requirements.html[End User Requirements page^].
+To identify the gateway address to manually configure the client, see the https://docs.netapp.com/us-en/virtual-desktop-service/Reference.end_user_access.html[End User Requirements page^].
 
 == Cloud Insights
 
