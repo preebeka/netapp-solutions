@@ -65,6 +65,8 @@ Both on-premises vCenter and GCVE vCenter needs to be registered with Veeam. lin
 Here is a video explaining how to 
 link:https://youtu.be/uzmKXtv7EeY[Configure Replication Job].
 
+[NOTE] Replica VM can have different IP from the source VM and can also be connected to different port group. For more details, check the video above.
+
 
 ==== Perform Failover of Veeam Replication Job
 
