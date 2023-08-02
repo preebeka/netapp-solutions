@@ -125,13 +125,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
-      
-      <lastmod>2022-05-03T17:44:04-04:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_overview_netapp.html</loc>
       
       <lastmod>2023-05-04T10:08:27-04:00</lastmod>
@@ -204,7 +197,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/anthos-with-netapp/a-w-n_videos_and_demos.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -890,7 +883,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-guest.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -904,14 +897,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-nfs-datastore-option.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -981,14 +974,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/aws_ora_fsx_ec2_inc_merge.html</loc>
       
-      <lastmod>2023-06-29T15:59:57-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/aws_ora_fsx_ec2_iscsi_asm.html</loc>
       
-      <lastmod>2023-05-08T18:19:36-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1002,14 +995,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/aws_ora_fsx_ec2_migration.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/aws_ora_fsx_ec2_nfs_asm.html</loc>
       
-      <lastmod>2023-05-24T18:45:30-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1023,14 +1016,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/aws_postgres_fsx_ec2_hadr.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/awx_automation.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1065,7 +1058,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-migrate-vmware-hcx.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1317,7 +1310,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/cainvidia_netapp_retail_assistant_demonstration.html</loc>
       
-      <lastmod>2021-01-13T19:07:36-05:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1395,13 +1388,6 @@
       <loc>https://docs.netapp.com/us-en/netapp-solutions/automation/cloud_volumes_terraform.html</loc>
       
       <lastmod>2022-06-16T21:54:41-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
-      
-      <lastmod>2022-05-05T12:15:39-04:00</lastmod>
       
     </url>
   
@@ -1492,7 +1478,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/provider-managed/data-migration.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1513,7 +1499,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/provider-managed/data-protection.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1632,7 +1618,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/devops_with_netapp/dwn_videos_and_demos.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1695,7 +1681,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/ehc-support-configs.html</loc>
       
-      <lastmod>2023-02-07T13:50:41-05:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -1723,14 +1709,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/gcp-app-dr-sc-cvo-veeam.html</loc>
       
-      <lastmod>2023-07-31T19:19:32-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/gcp-app-dr-sc-cvs-veeam.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -2290,7 +2276,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
       
-      <lastmod>2021-06-23T11:36:04-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -2409,14 +2395,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/legal-notices.html</loc>
       
-      <lastmod>2023-05-18T13:55:39-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/marketing_overview.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -2519,9 +2505,9 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/na-446-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/na-446.html</loc>
       
-      <lastmod>2023-02-08T15:05:03-05:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -2708,79 +2694,79 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/dp-sec/nva-1143-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/dp-sec/nva-1143.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1150-deploy-link.html</loc>
-      
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1150-design-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1150-deploy.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1151-deploy-link.html</loc>
-      
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1151-design-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1150-design.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1153-deploy-link.html</loc>
-      
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1153-design-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1151-deploy.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/nva-1155-link.html</loc>
-      
-      <lastmod>2023-01-26T08:34:24-05:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1156-deploy-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1151-design.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1156-design-link.html</loc>
-      
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/nva-1157-deploy-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1153-deploy.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1153-design.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/nva-1155.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1156-deploy.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/nva-1156-design.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/nva-1157-deploy.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3389,7 +3375,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_videos_and_demos.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3431,7 +3417,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/rhhc-versions.html</loc>
       
-      <lastmod>2023-05-18T13:55:39-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3473,14 +3459,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/samples.html</loc>
       
-      <lastmod>2022-10-25T14:39:28-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/sb-4154-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/sb-4154.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3494,7 +3480,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2023-07-31T19:19:46-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:50-04:00</lastmod>
       
     </url>
   
@@ -3515,14 +3501,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/provider-managed/setup.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/snapctr_svcs_ora.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3550,7 +3536,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/sql-aws-ec2.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3662,7 +3648,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/template.html</loc>
       
-      <lastmod>2022-09-24T11:44:39-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3674,128 +3660,128 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-3633-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-3633.html</loc>
       
-      <lastmod>2023-01-19T05:35:17-05:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-4250-link.html</loc>
-      
-      <lastmod>2023-01-19T05:35:17-05:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/dp-sec/tr-4320-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-4250.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-4467-link.html</loc>
-      
-      <lastmod>2023-02-08T15:05:03-05:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/dp-sec/tr-4571-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/dp-sec/tr-4320.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/tr-4623-link.html</loc>
-      
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/dp-sec/tr-4704-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-4467.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-4764-link.html</loc>
-      
-      <lastmod>2023-02-08T15:05:03-05:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4785-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/dp-sec/tr-4571.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/tr-4792-link.html</loc>
-      
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-4794-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/data-analytics/tr-4623.html</loc>
       
-      <lastmod>2023-01-19T05:35:17-05:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4799-link.html</loc>
-      
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4807-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/dp-sec/tr-4704.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4815-link.html</loc>
-      
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4851-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-4764.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4859-link.html</loc>
-      
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4915-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4785.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4811-link.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/tr-4792.html</loc>
       
-      <lastmod>2023-05-04T11:20:06-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/tr-4794.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4799.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4807.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4815.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4851.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4859.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4915.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ai/tr-4811.html</loc>
+      
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3809,14 +3795,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/videos.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vmware-vsphere8-intro.html</loc>
       
-      <lastmod>2023-05-03T18:45:16-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3865,7 +3851,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_demos_videos.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -3970,7 +3956,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_ontap_recommended_esxi_host_and_other_ontap_settings.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -4124,14 +4110,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/tanzu_with_netapp/vtwn_overview_vmware_tanzu.html</loc>
       
-      <lastmod>2022-07-21T15:05:50-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/tanzu_with_netapp/vtwn_overview_vsk.html</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/tanzu_with_netapp/vtwn_overview_vst.html</loc>
       
-      <lastmod>2022-08-03T14:32:47-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -4159,7 +4145,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/tanzu_with_netapp/vtwn_videos_and_demos.html</loc>
       
-      <lastmod>2023-06-29T18:40:33-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
@@ -4173,14 +4159,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vvols-ontap.html</loc>
       
-      <lastmod>2023-05-24T18:45:30-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vvols-overview.html</loc>
       
-      <lastmod>2023-05-24T18:45:30-04:00</lastmod>
+      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
       
     </url>
   
