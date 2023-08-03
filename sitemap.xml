@@ -260,7 +260,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/about.html</loc>
       
-      <lastmod>2023-08-03T12:46:16+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
@@ -1233,7 +1233,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/bxp/bxp-scv-hybrid-solution.html</loc>
       
-      <lastmod>2023-08-03T15:21:24+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
@@ -1380,7 +1380,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/cli_automation.html</loc>
       
-      <lastmod>2023-08-03T17:21:09+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
@@ -1681,7 +1681,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/ehc-support-configs.html</loc>
       
-      <lastmod>2023-08-02T14:50:34+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
@@ -3088,28 +3088,28 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_openshift_BM.html</loc>
       
-      <lastmod>2021-08-27T18:44:00+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_openshift_OSP.html</loc>
       
-      <lastmod>2021-08-27T18:44:00+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_openshift_RHV.html</loc>
       
-      <lastmod>2021-08-27T18:44:00+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_openshift_VMW.html</loc>
       
-      <lastmod>2021-08-27T18:44:00+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
@@ -3137,7 +3137,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/rh-os-n_overview_openshift.html</loc>
       
-      <lastmod>2023-06-07T13:46:57+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
@@ -3380,6 +3380,34 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/on-premises/rhhc-op-data-migration.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/on-premises/rhhc-op-data-protection.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/on-premises/rhhc-op-setup.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/on-premises/rhhc-op-solution.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/rhhc-overview.html</loc>
       
       <lastmod>2023-05-18T17:55:39+00:00</lastmod>
@@ -3387,9 +3415,65 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/provider-managed/rhhc-pm-data-migration.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/provider-managed/rhhc-pm-data-protection.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/provider-managed/rhhc-pm-setup.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/provider-managed/rhhc-pm-solution.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/rhhc-resources.html</loc>
       
       <lastmod>2023-05-18T17:55:39+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/self-managed/rhhc-sm-data-migration.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/self-managed/rhhc-sm-data-protection.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/self-managed/rhhc-sm-setup.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/rhhc/self-managed/rhhc-sm-solution.html</loc>
+      
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
@@ -3480,7 +3564,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2023-08-03T17:22:14+00:00</lastmod>
+      <lastmod>2023-08-03T18:37:10+00:00</lastmod>
       
     </url>
   
@@ -4152,14 +4236,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vvols-deploy.html</loc>
       
-      <lastmod>2023-08-03T12:46:16+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vvols-ontap.html</loc>
       
-      <lastmod>2023-08-03T13:44:34+00:00</lastmod>
+      <lastmod>2023-08-03T18:36:56+00:00</lastmod>
       
     </url>
   
