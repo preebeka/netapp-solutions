@@ -9341,7 +9341,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-08-02 10:50:34 -0400">08/02/2023</time>
+    <time datetime="2023-08-03 17:21:09 +0000">08/03/2023</time>
     
   
 
@@ -9351,6 +9351,14 @@
           alt="kevin-hoke"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/55808219?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/sufianNetApp">
+    <img  class="avatar avatar-small"
+          alt="sufianNetApp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/74196562?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -9424,24 +9432,39 @@ Amazon FSx for NetApp ONTAP and VMware Cloud on AWS must be in the same availabi
 </li>
 <li>
 <p>On the Select File System Type page, choose Amazon FSx for NetApp ONTAP, and then choose Next. The Create File System page appears.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-1.png" alt="aws fsx guest 1"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>In the Networking section, for Virtual Private Cloud (VPC), choose the appropriate VPC and preferred subnets along with the route table. In this case, vmcfsx2.vpc is selected from the dropdown.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-2.png" alt="aws fsx guest 2"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>For the creation method, choose Standard Create. You can also choose Quick Create, but this document uses the Standard create option.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-3.png" alt="aws fsx guest 3"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>In the Networking section, for Virtual Private Cloud (VPC), choose the appropriate VPC and preferred subnets along with the route table. In this case, vmcfsx2.vpc is selected from the dropdown.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-4.png" alt="aws fsx guest 4"></span></p>
 </div>
@@ -9457,37 +9480,50 @@ In the Networking section, for Virtual Private Cloud (VPC), choose the appropria
 </tr>
 </table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>In the Security &amp; Encryption section, for the Encryption Key, choose the AWS Key Management Service (AWS KMS) encryption key that protects the file system&#8217;s data at rest. For the File System Administrative Password, enter a secure password for the fsxadmin user.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-5.png" alt="aws fsx guest 5"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>In virtual machine and specify the password to use with vsadmin for administering ONTAP using REST APIs or the CLI. If no password is specified, a fsxadmin user can be used for administering the SVM. In the Active Directory section, make sure to join Active Directory to the SVM for provisioning SMB shares. In the Default Storage Virtual Machine Configuration section, provide a name for the storage in this validation, SMB shares are provisioned using a self-managed Active Directory domain.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-6.png" alt="aws fsx guest 6"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>In the Default Volume Configuration section, specify the volume name and size. This is an NFS volume. For Storage Efficiency, choose Enabled to turn on the ONTAP storage efficiency features (compression, deduplication, and compaction) or Disabled to turn them off.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-7.png" alt="aws fsx guest 7"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Review the file system configuration shown on the Create File System page.</p>
 </li>
 <li>
 <p>Click Create File System.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-8.png" alt="aws fsx guest 8"></span><br>
 <span class="image"><img src="./../../media/aws-fsx-guest-9.png" alt="aws fsx guest 9"></span><br>
 <span class="image"><img src="./../../media/aws-fsx-guest-10.png" alt="aws fsx guest 10"></span></p>
-</div>
-</li>
-</ol>
 </div>
 <div class="paragraph">
 <p>For more detailed information, see <a href="https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started.html">Getting started with Amazon FSx for NetApp ONTAP</a>.</p>
@@ -9551,21 +9587,26 @@ In the Networking section, for Virtual Private Cloud (VPC), choose the appropria
 <pre>sudo mount -t nfs nfsvers=4.1,198.19.254.239:/nfsdemovol01 /fsx/nfsdemovol01</pre>
 </div>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/aws-fsx-guest-20.png" alt="aws fsx guest 20"></span></p>
-</div>
-</li>
-<li>
-<p>Once executed, run the df command to validate the mount.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/aws-fsx-guest-21.png" alt="aws fsx guest 21"></span></p>
-</div>
 </li>
 </ol>
 </div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/aws-fsx-guest-20.png" alt="aws fsx guest 20"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Once executed, run the df command to validate the mount.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/aws-fsx-guest-21.png" alt="aws fsx guest 21"></span></p>
+</div>
 <div class="videoblock">
+<div class="title">Mount FSx ONTAP volume on Linux client</div>
 <div class="content">
-<iframe frameborder="0"  width="360" src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=c3befe1b-4f32-4839-a031-b01200fb6d60" allowfullscreen allow="autoplay"> </iframe>
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=c3befe1b-4f32-4839-a031-b01200fb6d60" allowfullscreen allow="autoplay"> </iframe>
 </div>
 </div>
 </div>
@@ -9586,6 +9627,9 @@ In the Networking section, for Virtual Private Cloud (VPC), choose the appropria
 </li>
 <li>
 <p>For Another Computer, enter the DNS name for the storage virtual machine (SVM). For example, FSXSMBTESTING01.FSXTESTING.LOCAL is used in this example.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9601,15 +9645,23 @@ Tp find the SVM&#8217;s DNS name on the Amazon FSx console, choose Storage Virtu
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-22.png" alt="aws fsx guest 22"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>In the Shared Folders tool, choose Shares in the left pane to see the active shares for the Amazon FSx file system.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-23.png" alt="aws fsx guest 23"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Now choose a new share and complete the Create a Shared Folder wizard.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-24.png" alt="aws fsx guest 24"></span><br>
 <span class="image"><img src="./../../media/aws-fsx-guest-25.png" alt="aws fsx guest 25"></span></p>
@@ -9617,14 +9669,15 @@ Tp find the SVM&#8217;s DNS name on the Amazon FSx console, choose Storage Virtu
 <div class="paragraph">
 <p>To learn more about creating and managing SMB shares on an Amazon FSx file system, see <a href="https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/create-smb-shares.html">Creating SMB Shares</a>.</p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After connectivity is in place, the SMB share can be attached and used for application data. To accomplish this, Copy the share path and use the Map Network Drive option to mount the volume on the VM running on VMware Cloud on the AWS SDDC.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/aws-fsx-guest-26.png" alt="aws fsx guest 26"></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/aws-fsx-guest-26.png" alt="aws fsx guest 26"></span></p>
 </div>
 </div>
 </details>
@@ -9632,6 +9685,7 @@ Tp find the SVM&#8217;s DNS name on the Amazon FSx console, choose Storage Virtu
 <summary class="title">Connect a FSx for NetApp ONTAP LUN to a host using iSCSI</summary>
 <div class="content">
 <div class="videoblock">
+<div class="title">Connect a FSx for NetApp ONTAP LUN to a host using iSCSI</div>
 <div class="content">
 <iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0d03e040-634f-4086-8cb5-b01200fb8515" allowfullscreen allow="autoplay"> </iframe>
 </div>
@@ -9662,12 +9716,19 @@ Tp find the SVM&#8217;s DNS name on the Amazon FSx console, choose Storage Virtu
 <pre>FsxId040eacc5d0ac31017::&gt; lun create -vserver vmcfsxval2svm -volume nimfsxscsivol -lun nimofsxlun01 -size 5gb -ostype windows -space-reserve enabled</pre>
 </div>
 </div>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p>In this example, we created a LUN of size 5g (5368709120).</p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Create the necessary igroups to control which hosts have access to specific LUNs.</p>
+</li>
+</ol>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre>FsxId040eacc5d0ac31017::&gt; igroup create -vserver vmcfsxval2svm -igroup winIG -protocol iscsi -ostype windows -initiator iqn.1991-05.com.microsoft:vmcdc01.fsxtesting.local
@@ -9690,9 +9751,13 @@ vmcfsxval2svm
 <div class="paragraph">
 <p>Two entries were displayed.</p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Map the LUNs to igroups using the following command:</p>
+</li>
+</ol>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre>FsxId040eacc5d0ac31017::&gt; lun map -vserver vmcfsxval2svm -path /vol/nimfsxscsivol/nimofsxlun01 -igroup winIG
@@ -9715,9 +9780,13 @@ vmcfsxval2svm
 <div class="paragraph">
 <p>Two entries were displayed.</p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Connect the newly provisioned LUN to a Windows VM:</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p>To connect the new LUN tor a Windows host residing on VMware cloud on AWS SDDC, complete the following steps:</p>
 </div>
@@ -9737,6 +9806,9 @@ vmcfsxval2svm
 </li>
 <li>
 <p>Select Enable Multipath, and then select “Automatically Restore This Connection When the Computer Starts” or “Add This Connection to the List of Favorite Targets”. Click Advanced.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9751,12 +9823,6 @@ The Windows host must have an iSCSI connection to each node in the cluster. The 
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-fsx-guest-30.png" alt="aws fsx guest 30"></span></p>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ol>
 </div>
 <div class="paragraph">
 <p>LUNs on the storage virtual machine (SVM) appear as disks to the Windows host. Any new disks that are added are not automatically discovered by the host. Trigger a manual rescan to discover the disks by completing the following steps:</p>
@@ -9774,11 +9840,11 @@ The Windows host must have an iSCSI connection to each node in the cluster. The 
 </li>
 <li>
 <p>Click Action &gt; Rescan Disks.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/aws-fsx-guest-31.png" alt="aws fsx guest 31"></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/aws-fsx-guest-31.png" alt="aws fsx guest 31"></span></p>
 </div>
 <div class="paragraph">
 <p>When a new LUN is first accessed by the Windows host, it has no partition or file system. Initialize the LUN and, optionally, format the LUN with a file system by completing the following steps:</p>
@@ -9793,11 +9859,11 @@ The Windows host must have an iSCSI connection to each node in the cluster. The 
 </li>
 <li>
 <p>Follow the instructions in the wizard. In this example, drive F: is mounted.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/aws-fsx-guest-32.png" alt="aws fsx guest 32"></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/aws-fsx-guest-32.png" alt="aws fsx guest 32"></span></p>
 </div>
 </div>
 </details>
@@ -9846,89 +9912,141 @@ Use the <a href="https://cloud.netapp.com/cvo-sizer">Cloud Volumes ONTAP sizer</
 <ol class="arabic">
 <li>
 <p>Log into NetApp Cloud Central; the Fabric View screen is displayed. Locate the Cloud Volumes ONTAP tab and select Go to Cloud Manager. After you are logged in, the Canvas screen is displayed.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-1.png" alt="aws cvo guest 1"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>On the Cloud Manager home page, click Add a Working Environment and then select AWS as the cloud and the type of the system configuration.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-2.png" alt="aws cvo guest 2"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Provide the details of the environment to be created including the environment name and admin credentials. Click Continue.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-3.png" alt="aws cvo guest 3"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Select the add-on services for Cloud Volumes ONTAP deployment, including Cloud Data Sense, Cloud Backup, and Cloud Insights. Click Continue.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-4.png" alt="aws cvo guest 4"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>On the HA Deployment Models page, choose the Multiple Availability Zones configuration.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-5.png" alt="aws cvo guest 5"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>On the Region &amp; VPC page, enter the network information and then click Continue.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-6.png" alt="aws cvo guest 6"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>On the Connectivity and SSH Authentication page, choose connection methods for the HA pair and the mediator.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-7.png" alt="aws cvo guest 7"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Specify the floating IP addresses and then click Continue.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-8.png" alt="aws cvo guest 8"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Select the appropriate route tables to include routes to the floating IP addresses and then click Continue.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-9.png" alt="aws cvo guest 9"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>On the Data Encryption page, choose AWS-managed encryption.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-10.png" alt="aws cvo guest 10"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Select the license option: Pay-As-You-Go or BYOL for using an existing license. In this example, the Pay-As-You-Go option is used.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-11.png" alt="aws cvo guest 11"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Select between several preconfigured packages available based on the type of workload to be deployed on the VMs running on the VMware cloud on AWS SDDC.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-12.png" alt="aws cvo guest 12"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>On the Review &amp; Approve page, review and confirm the selections.To create the Cloud Volumes ONTAP instance, click Go.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-13.png" alt="aws cvo guest 13"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After Cloud Volumes ONTAP is provisioned, it is listed in the working environments on the Canvas page.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/aws-cvo-guest-14.png" alt="aws cvo guest 14"></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/aws-cvo-guest-14.png" alt="aws cvo guest 14"></span></p>
 </div>
 </div>
 </details>
@@ -9939,33 +10057,45 @@ Use the <a href="https://cloud.netapp.com/cvo-sizer">Cloud Volumes ONTAP sizer</
 <ol class="arabic">
 <li>
 <p>After the working environment is ready, make sure the CIFS server is configured with the appropriate DNS and Active Directory configuration parameters. This step is required before you can create the SMB volume.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-20.png" alt="aws cvo guest 20"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Select the CVO instance to create the volume and click the Create Volume option. Choose the appropriate size and cloud manager chooses the containing aggregate or use advanced allocation mechanism to place on a specific aggregate. For this demo, SMB is selected as the protocol.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-21.png" alt="aws cvo guest 21"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After the volume is provisioned, it is availabe under the Volumes pane. Because a CIFS share is provisioned, you should give your users or groups permission to the files and folders and verify that those users can access the share and create a file.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-22.png" alt="aws cvo guest 22"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After the volume is created, use the mount command to connect to the share from the VM running on the VMware Cloud in AWS SDDC hosts.</p>
 </li>
 <li>
 <p>Copy the following path and use the Map Network Drive option to mount the volume on the VM running on the VMware Cloud in AWS SDDC.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-23.png" alt="aws cvo guest 23"></span><br>
 <span class="image"><img src="./../../media/aws-cvo-guest-24.png" alt="aws cvo guest 24"></span></p>
-</div>
-</li>
-</ol>
 </div>
 </div>
 </details>
@@ -9982,11 +10112,15 @@ Use the <a href="https://cloud.netapp.com/cvo-sizer">Cloud Volumes ONTAP sizer</
 </li>
 <li>
 <p>Click Add Volume &gt; New Volume, select iSCSI, and click Create Initiator Group. Click Continue.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/aws-cvo-guest-30.png" alt="aws cvo guest 30"></span><br>
 <span class="image"><img src="./../../media/aws-cvo-guest-31.png" alt="aws cvo guest 31"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After the volume is provisioned, select the volume, and then click Target IQN. To copy the iSCSI Qualified Name (IQN), click Copy. Set up an iSCSI connection from the host to the LUN.</p>
 </li>
@@ -10027,8 +10161,7 @@ The Windows host must have an iSCSI connection to each node in the cluster. The 
 </table>
 </div>
 <div class="paragraph">
-<p>+<br>
-<span class="image"><img src="./../../media/aws-cvo-guest-32.png" alt="aws cvo guest 32"></span></p>
+<p><span class="image"><img src="./../../media/aws-cvo-guest-32.png" alt="aws cvo guest 32"></span></p>
 </div>
 <div class="paragraph">
 <p>LUNs from the SVM appear as disks to the Windows host. Any new disks that are added are not automatically discovered by the host. Trigger a manual rescan to discover the disks by completing the following steps:</p>

@@ -9341,7 +9341,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-08-03 08:46:16 -0400">08/03/2023</time>
+    <time datetime="2023-08-03 17:21:09 +0000">08/03/2023</time>
     
   
 
@@ -9351,6 +9351,14 @@
           alt="kevin-hoke"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/55808219?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/sufianNetApp">
+    <img  class="avatar avatar-small"
+          alt="sufianNetApp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/74196562?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -9500,10 +9508,14 @@ HCX advanced is the default option and VMware HCX Enterprise edition is also ava
 </li>
 <li>
 <p>In the HCX Workload Mobility section, click <strong>Get Started</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image2.png" alt="Screenshot of the HCX Workload Mobility section."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Select the <strong>I Agree with Terms and Conditions</strong> option and click <strong>Enable and Deploy</strong>.</p>
 </li>
@@ -9551,6 +9563,9 @@ The deployment takes approximately 25 to 30 minutes.
 <ol class="arabic">
 <li>
 <p>From the Azure portal, go to the Azure VMware Solution, select the private cloud, and select <strong>Manage &gt; Add-ons &gt; Migration</strong> using HCX and copy the HCX Cloud Manager portal to download the OVA file.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9566,9 +9581,13 @@ Use the default CloudAdmin user credentials to access the HCX portal.
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image4.png" alt="Screenshot of the Azure portal to download the HCX OVA file."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After you access the HCX portal with <a href="mailto:cloudadmin@vsphere.local" target="_blank" rel="noopener">cloudadmin@vsphere.local</a> using the jumphost, navigate to <strong>Administration &gt; System Updates</strong> and click <strong>Request Download Link</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9584,15 +9603,23 @@ Either download or copy the link to the OVA and paste it into a browser to begin
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image5.png" alt="Error: Screenshot of OVA download link."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After the OVA is downloaded, deploy it on to the on-premises VMware vSphere environment by using the <strong>Deploy OVF Template</strong> option.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image6.png" alt="Error: Screenshot to select the correct OVA template."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Enter all the required information for the OVA deployment, click <strong>Next</strong>, and then click <strong>Finish</strong> to deploy the VMware HCX connector OVA.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9604,9 +9631,6 @@ Power on the virtual appliance manually.
 </td>
 </tr>
 </table>
-</div>
-</li>
-</ol>
 </div>
 <div class="paragraph">
 <p>For step-by-step instructions, see the <a href="https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-BFD7E194-CFE5-4259-B74B-991B26A51758.html" target="_blank" rel="noopener">VMware HCX User Guide</a>.</p>
@@ -9626,6 +9650,9 @@ Power on the virtual appliance manually.
 </li>
 <li>
 <p>Under <strong>Connect with on-premise Using HCX keys</strong>, click <strong>Add</strong> and copy the activation key.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image7.png" alt="Screenshot for adding HCX keys."></span></p>
 </div>
@@ -9641,9 +9668,13 @@ A separate key is required for each on-premises HCX Connector that is deployed.
 </tr>
 </table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Log into the on-premises VMware HCX Manager at <a href="https://hcxmanagerIP:9443" target="_blank" rel="noopener">https://hcxmanagerIP:9443</a> using administrator credentials.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9656,9 +9687,13 @@ Use the password defined during the OVA deployment.
 </tr>
 </table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>In the licensing, enter the key copied from step 3 and click <strong>Activate</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9671,7 +9706,8 @@ The on-premises HCX Connector should have internet access.
 </tr>
 </table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Under <strong>Datacenter Location</strong>, provide the nearest location for installing the VMware HCX Manager on-premises. Click <strong>Continue</strong>.</p>
 </li>
@@ -9683,6 +9719,9 @@ The on-premises HCX Connector should have internet access.
 </li>
 <li>
 <p>Under <strong>Connect your vCenter</strong>, provide the fully qualified domain name (FQDN) or IP address of vCenter Server and the appropriate credentials and click <strong>Continue</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9695,9 +9734,13 @@ Use the FQDN to avoid connectivity issues later.
 </tr>
 </table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Under <strong>Configure SSO/PSC</strong>, provide the Platform Services Controller&#8217;s FQDN or IP address and click <strong>Continue</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9710,12 +9753,16 @@ Enter the VMware vCenter Server FQDN or IP address.
 </tr>
 </table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Verify that the information entered is correct and click <strong>Restart</strong>.</p>
 </li>
 <li>
 <p>After the services restart, vCenter Server is displayed as green on the page that appears. Both vCenter Server and SSO must have the appropriate configuration parameters, which should be the same as the previous page.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9731,9 +9778,6 @@ This process should take approximately 10 to 20 minutes and for the plug-in to b
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image8.png" alt="Screenshot showing completed process."></span></p>
 </div>
-</li>
-</ol>
-</div>
 </div>
 </details>
 <details>
@@ -9746,12 +9790,19 @@ This process should take approximately 10 to 20 minutes and for the plug-in to b
 <ol class="arabic">
 <li>
 <p>To create a site pair between the on-premises vCenter environment and Azure VMware Solution SDDC, log in to the on-premises vCenter Server and access the new HCX vSphere Web Client plug-in.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image9.png" alt="Screenshot of the HCX vSphere Web Client plug-in."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Under Infrastructure, click <strong>Add a Site Pairing</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9767,9 +9818,13 @@ Enter the Azure VMware Solution HCX Cloud Manager URL or IP address and the cred
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image10.png" alt="Screenshot URL or IP address and credentials for CloudAdmin role."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Click <strong>Connect</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9782,14 +9837,15 @@ VMware HCX Connector must be able to route to HCX Cloud Manager IP over port 443
 </tr>
 </table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After the pairing is created, the newly configured site pairing is available on the HCX Dashboard.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/anfd-hcx-image11.png" alt="Screenshot of the completed process on the HCX dashboard."></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/anfd-hcx-image11.png" alt="Screenshot of the completed process on the HCX dashboard."></span></p>
 </div>
 </div>
 </details>
@@ -9803,6 +9859,9 @@ VMware HCX Connector must be able to route to HCX Cloud Manager IP over port 443
 <ol class="arabic">
 <li>
 <p>Under Infrastructure, select <strong>Interconnect &gt; Multi-Site Service Mesh &gt; Compute Profiles &gt; Create Compute Profile</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9818,9 +9877,13 @@ The compute profiles define the deployment parameters including the appliances t
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image12.png" alt="Screenshot of the vSphere client Interconnect page."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After the compute profile is created, create the network profiles by selecting <strong>Multi-Site Service Mesh &gt; Network Profiles &gt; Create Network Profile</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p>The network profile defines a range of IP address and networks that are used by HCX for its virtual appliances.</p>
 </div>
@@ -9839,7 +9902,8 @@ This step requires two or more IP addresses. These IP addresses are assigned fro
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image13.png" alt="Screenshot of adding IP addresses to the vSphere client Interconnect page."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>At this time, the compute and network profiles have been successfully created.</p>
 </li>
@@ -9848,6 +9912,9 @@ This step requires two or more IP addresses. These IP addresses are assigned fro
 </li>
 <li>
 <p>The Service Mesh specifies a local and remote compute and network profile pair.</p>
+</li>
+</ol>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -9863,14 +9930,15 @@ As part of this process, the HCX appliances are deployed and automatically confi
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image14.png" alt="Screenshot of Service Mesh tab on the vSphere client Interconnect page."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>This is the final step of configuration. This should take close to 30 minutes to complete the deployment. After the service mesh is configured, the environment is ready with the IPsec tunnels successfully created to migrate the workload VMs.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/anfd-hcx-image15.png" alt="Screenshot of the completed process on the vSphere client Interconnect page."></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/anfd-hcx-image15.png" alt="Screenshot of the completed process on the vSphere client Interconnect page."></span></p>
 </div>
 </div>
 </details>
@@ -9896,10 +9964,14 @@ As part of this process, the HCX appliances are deployed and automatically confi
 <ol class="arabic">
 <li>
 <p>Access the <strong>Migrate</strong> tab under <strong>Services &gt; Migration</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image16.png" alt="Screenshot of the Migration section in the vSphere client."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Under <strong>Remote Site Connection</strong>, select the remote site connection and select the source and destination. In this example, the destination is Azure VMware Solution SDDC HCX endpoint.</p>
 </li>
@@ -9908,12 +9980,19 @@ As part of this process, the HCX appliances are deployed and automatically confi
 </li>
 <li>
 <p>In the <strong>Transfer and Placement</strong> section, update the mandatory fields (<strong>Cluster</strong>, <strong>Storage</strong>, <strong>Destination</strong>, and <strong>Network</strong>), including the migration profile, and click <strong>Validate</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image17.png" alt="Screenshot of the Transfer and Placement section of the vSphere client."></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After the validation checks are complete, click <strong>Go</strong> to initiate the migration.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../../media/anfd-hcx-image18.png" alt="Screenshot of migration initiation."></span></p>
 </div>
@@ -9929,14 +10008,15 @@ During this migration, a placeholder disk is created on the specified Azure NetA
 </tr>
 </table>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>After the migration is complete, validate the same by accessing the destination SDDC vCenter.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../../media/anfd-hcx-image19.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../../media/anfd-hcx-image19.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
 <div class="paragraph">
 <p>For additional and detailed information about various migration options and on how to migrate workloads from on-premises to Azure VMware Solution using HCX, see <a href="https://docs.vmware.com/en/VMware-HCX/4.4/hcx-user-guide/GUID-14D48C15-3D75-485B-850F-C5FCB96B5637.html" target="_blank" rel="noopener">VMware HCX User Guide</a>.</p>
@@ -9945,8 +10025,9 @@ During this migration, a placeholder disk is created on the specified Azure NetA
 <p>To learn more about this process, feel free to watch the following video:</p>
 </div>
 <div class="videoblock">
+<div class="title">Workload Migration using HCX</div>
 <div class="content">
-<iframe frameborder="0"  width="360" src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=255640f5-4dff-438c-8d50-b01200f017d1" allowfullscreen allow="autoplay"> </iframe>
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=255640f5-4dff-438c-8d50-b01200f017d1" allowfullscreen allow="autoplay"> </iframe>
 </div>
 </div>
 <div class="paragraph">
@@ -9959,8 +10040,9 @@ During this migration, a placeholder disk is created on the specified Azure NetA
 <p>To learn more about this process, feel free to watch the following video:</p>
 </div>
 <div class="videoblock">
+<div class="title">HCX vMotion</div>
 <div class="content">
-<iframe frameborder="0"  width="360" src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=986bb505-6f3d-4a5a-b016-b01200f03f18" allowfullscreen allow="autoplay"> </iframe>
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=986bb505-6f3d-4a5a-b016-b01200f03f18" allowfullscreen allow="autoplay"> </iframe>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -10030,23 +10112,31 @@ The target ANF datastore should have sufficient space to handle the migration.
 <ul>
 <li>
 <p>Azure VMware Solution documentation</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><a href="https://docs.microsoft.com/en-us/azure/azure-vmware/" target="_blank" rel="noopener">https://docs.microsoft.com/en-us/azure/azure-vmware/</a></p>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Azure NetApp Files documentation</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/" target="_blank" rel="noopener">https://docs.microsoft.com/en-us/azure/azure-netapp-files/</a></p>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>VMware HCX User Guide</p>
-<div class="paragraph">
-<p><a href="https://docs.vmware.com/en/VMware-HCX/4.4/hcx-user-guide/GUID-BFD7E194-CFE5-4259-B74B-991B26A51758.html" target="_blank" rel="noopener">https://docs.vmware.com/en/VMware-HCX/4.4/hcx-user-guide/GUID-BFD7E194-CFE5-4259-B74B-991B26A51758.html</a></p>
-</div>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.vmware.com/en/VMware-HCX/4.4/hcx-user-guide/GUID-BFD7E194-CFE5-4259-B74B-991B26A51758.html" target="_blank" rel="noopener">https://docs.vmware.com/en/VMware-HCX/4.4/hcx-user-guide/GUID-BFD7E194-CFE5-4259-B74B-991B26A51758.html</a></p>
 </div>
 </div>
 </div>

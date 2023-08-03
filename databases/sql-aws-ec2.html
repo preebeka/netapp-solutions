@@ -9341,7 +9341,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-08-03 08:46:16 -0400">08/03/2023</time>
+    <time datetime="2023-08-03 17:21:09 +0000">08/03/2023</time>
     
   
 
@@ -9351,6 +9351,14 @@
           alt="kevin-hoke"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/55808219?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/sufianNetApp">
+    <img  class="avatar avatar-small"
+          alt="sufianNetApp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/74196562?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -9612,22 +9620,34 @@ Overcommitment of storage must be carefully considered and managed for a mission
 </li>
 <li>
 <p>Create an Amazon FSx for the NetApp ONTAP file system using the Standard Create option under Creation Method. This allows you to define FSxadmin and vsadmin credentials.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image1.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Specify the password for fsxadmin.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image2.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Specify the password for SVMs.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image3.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Create volumes by following the step listed in <a href="https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/creating-volumes.html" target="_blank" rel="noopener">Creating a volume on FSx for NetApp ONTAP</a>.</p>
 <div class="paragraph">
@@ -9652,6 +9672,9 @@ Overcommitment of storage must be carefully considered and managed for a mission
 </li>
 <li>
 <p>Use the following SSH command to create volumes:</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>Vol create -vserver svm001 -volume vol_awssqlprod01_data -aggregate aggr1 -size 800GB -state online -tiering-policy snapshot-only -percent-snapshot-space 0 -autosize-mode grow -snapshot-policy none -security-style ntfs -aggregate aggr1
@@ -9660,26 +9683,38 @@ volume modify -vserver svm001 -volume vol_awssqlprod01_data -space-mgmt-try-firs
 volume snapshot autodelete modify -vserver svm001 -volume vol_awssqlprod01_data -delete-order oldest_first</pre>
 </div>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Start the iSCSI service with PowerShell using elevated privileges in Windows Servers.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>Start-service -Name msiscsi
 Set-Service -Name msiscsi -StartupType Automatic</pre>
 </div>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Install Multipath-IO with PowerShell using elevated privileges in Windows Servers.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre> Install-WindowsFeature -name Multipath-IO -Restart</pre>
 </div>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Find the Windows initiator Name with PowerShell using elevated privileges in Windows Servers.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>Get-InitiatorPort | select NodeAddress</pre>
@@ -9688,17 +9723,25 @@ Set-Service -Name msiscsi -StartupType Automatic</pre>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image4.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Connect to Storage virtual machines (SVM) using putty and create an iGroup.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>igroup create -igroup igrp_ws2019sql1 -protocol iscsi -ostype windows -initiator iqn.1991-05.com.microsoft:ws2019-sql1.contoso.net</pre>
 </div>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Use the following SSH command to create LUNs:</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>lun create -path /vol/vol_awssqlprod01_data/lun_awssqlprod01_data -size 700GB -ostype windows_2008 -space-reserve enabled -space-allocation enabled lun create -path /vol/vol_awssqlprod01_log/lun_awssqlprod01_log -size 100GB -ostype windows_2008 -space-reserve enabled -space-allocation enabled</pre>
@@ -9707,12 +9750,16 @@ Set-Service -Name msiscsi -StartupType Automatic</pre>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image5.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>To achieve I/O alignment with the OS partitioning scheme, use windows_2008 as the recommended LUN type. Refer <a href="https://docs.netapp.com/us-en/ontap/san-admin/io-misalignments-properly-aligned-luns-concept.html" target="_blank" rel="noopener">here</a> for additional information.</p>
 </li>
 <li>
 <p>Use the following SSH command to the map igroup to the LUNs that you just created.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>lun show
@@ -9722,33 +9769,49 @@ lun map -path /vol/vol_awssqlprod01_data/lun_awssqlprod01_data -igroup igrp_awss
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image6.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>For a shared disk that uses the Windows Failover Cluster, run an SSH command to map the same LUN to the igroup that belong to all servers that participate in the Windows Failover Cluster.</p>
 </li>
 <li>
 <p>Connect Windows Server to an SVM with an iSCSI target. Find the target IP address from AWS Portal.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image7.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>From Server Manager and the Tools menu,  select the iSCSI Initiator. Select the Discovery tab and then select Discover Portal. Supply the iSCSI IP address from previous step and select Advanced. From Local Adapter, select Microsoft iSCSI Initiator. From Initiator IP, select the IP of the server. Then select OK to close all windows.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image8.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Repeat step 12 for the second iSCSI IP from the SVM.</p>
 </li>
 <li>
 <p>Select the <strong>Targets</strong> tab,  select <strong>Connect</strong>,  and select <strong>Enable muti-path</strong>.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image9.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>For best performance, add more sessions; NetApp recommends creating five iSCSI sessions. Select <strong>Properties *&gt; *Add session *&gt; *Advanced</strong> and repeat step 12.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>$TargetPortals = ('10.2.1.167', '10.2.2.12')
@@ -9759,24 +9822,22 @@ foreach ($TargetPortal in $TargetPortals) {New-IscsiTargetPortal -TargetPortalAd
 <p><span class="image"><img src="./../media/sql-awsec2-image10.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
 <div class="paragraph">
-<p><strong>Best practices</strong></p>
+<p>+<br>
+<strong>Best practices</strong></p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Configure five iSCSI sessions per target interface for optimal performance.</p>
-</li>
-<li>
-<p>Configure a round-robin policy for the best overall iSCSI performance.</p>
-</li>
-<li>
-<p>Make sure that the allocation unit size is set to 64K for partitions when formatting the LUNs</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>+<br>
+* Configure five iSCSI sessions per target interface for optimal performance.<br>
+* Configure a round-robin policy for the best overall iSCSI performance.<br>
+* Make sure that the allocation unit size is set to 64K for partitions when formatting the LUNs</p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Run the following PowerShell command to make sure that the iSCSI session is persisted.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>$targets = Get-IscsiTarget
@@ -9789,9 +9850,13 @@ Connect-IscsiTarget -IsMultipathEnabled $true -NodeAddress $target.NodeAddress -
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image11.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Initialize disks with the following PowerShell command.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>$disks = Get-Disk | where PartitionStyle -eq raw
@@ -9801,9 +9866,13 @@ foreach ($disk in $disks) {Initialize-Disk $disk.Number}</pre>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image12.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Run the Create Partition and Format Disk commands with PowerShell.</p>
+</li>
+</ol>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>New-Partition -DiskNumber 1 -DriveLetter F -UseMaximumSize
@@ -9811,9 +9880,6 @@ Format-Volume -DriveLetter F -FileSystem NTFS -AllocationUnitSize 65536
 New-Partition -DiskNumber 2 -DriveLetter G -UseMaximumSize
 Format-Volume -DriveLetter G -FileSystem NTFS -AllocationUnitSize 65536</pre>
 </div>
-</div>
-</li>
-</ol>
 </div>
 <div class="paragraph">
 <p>You can automate volume and LUN creation using the PowerShell script from Appendix B. LUNs can also be created using SnapCenter.</p>
@@ -10008,23 +10074,31 @@ When you create a new database, Microsoft recommends specifying separate drives 
 <ol class="arabic">
 <li>
 <p>To set up credentials, select <strong>Settings</strong> &gt; <strong>New</strong> and then enter the credential information.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image14.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Add the storage system by selecting Storage Systems &gt; New and the provide the appropriate FSx for ONTAP storage information.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image15.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Add hosts by selecting <strong>Hosts</strong> &gt; <strong>Add</strong>, and then provide the host information. SnapCenter automatically installs the Windows and SQL Server plug-in. This process might take some time.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../media/sql-awsec2-image16.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/sql-awsec2-image16.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
 <div class="paragraph">
 <p>After all Plug-ins are installed, you must configure the log directory. This is the location where the transaction log backup resides. You can configure the log directory by selecting the host and then select configure the log directory.</p>
@@ -10097,38 +10171,54 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 <ol class="arabic">
 <li>
 <p>Select <strong>Resources</strong>, and then select <strong>Microsoft SQL Server *on the drop-down menu on the top left. Select *Refresh Resources</strong>.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../media/sql-awsec2-image19.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
-</li>
-<li>
-<p>Select the database to be backed up, then select <strong>Next</strong> and (<strong>+</strong>) to add the policy if one has not been created. Follow the <strong>New SQL Server Backup Policy</strong> to create a new policy.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../media/sql-awsec2-image20.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
-</li>
-<li>
-<p>Select the verification server if necessary. This server is the server that SnapCenter runs DBCC CHECKDB after a full backup has been created. Click <strong>Next</strong> for notification, and then select <strong>Summary</strong> to review. After reviewing, click <strong>Finish</strong>.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../media/sql-awsec2-image21.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
-</li>
-<li>
-<p>Click <strong>Back up Now</strong> to test the backup. In the pop- up windows, select <strong>Backup</strong>.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../media/sql-awsec2-image22.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
-</li>
-<li>
-<p>Select <strong>Monitor</strong> to verify that the backup has been completed.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../media/sql-awsec2-image23.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
 </li>
 </ol>
 </div>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/sql-awsec2-image19.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the database to be backed up, then select <strong>Next</strong> and (<strong>*) to add the policy if one has not been created. Follow the *New SQL Server Backup Policy</strong> to create a new policy.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/sql-awsec2-image20.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select the verification server if necessary. This server is the server that SnapCenter runs DBCC CHECKDB after a full backup has been created. Click <strong>Next</strong> for notification, and then select <strong>Summary</strong> to review. After reviewing, click <strong>Finish</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/sql-awsec2-image21.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong>Back up Now</strong> to test the backup. In the pop- up windows, select <strong>Backup</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/sql-awsec2-image22.png" alt="Error: Missing Graphic Image"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select <strong>Monitor</strong> to verify that the backup has been completed.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/sql-awsec2-image23.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
 <div class="paragraph">
 <p><strong>Best Practices</strong></p>
@@ -10158,10 +10248,14 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 <ol class="arabic">
 <li>
 <p>Select Resources and then select the database that you would like to restore.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image24.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Select the backup name that the database needs to be restored from and then select restore.</p>
 </li>
@@ -10170,11 +10264,11 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 </li>
 <li>
 <p>Select <strong>Monitor</strong> to verify that the restore process is successful.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../media/sql-awsec2-image25.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/sql-awsec2-image25.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
 </div>
 </details>
@@ -10302,20 +10396,24 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 </li>
 <li>
 <p>Select the backup name that you would like to clone, and then select Clone.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image26.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Follow the Clone from Backup instructions by providing the new SQL Server instance on EC2 and instance name to finish the clone process.</p>
 </li>
 <li>
 <p>Select Monitor to make sure that cloning is completed.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./../media/sql-awsec2-image27.png" alt="Error: Missing Graphic Image"></span></p>
-</div>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/sql-awsec2-image27.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
 </div>
 </details>
@@ -10325,8 +10423,9 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 <p>To learn more about this process, watch the following video:</p>
 </div>
 <div class="videoblock">
+<div class="title">Clone databases into the new SQL Server instance running on EC2</div>
 <div class="content">
-<iframe frameborder="0"  width="360" src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=27f28284-433d-4273-8748-b01200fb3cd7" allowfullscreen allow="autoplay"> </iframe>
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=27f28284-433d-4273-8748-b01200fb3cd7" allowfullscreen allow="autoplay"> </iframe>
 </div>
 </div>
 </div>
@@ -10365,9 +10464,9 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 </li>
 </ul>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>Function Install_MPIO_ssh {
+<pre class="highlight"><code class="language-shell" data-lang="shell">Function Install_MPIO_ssh {
     $hostname = $env:COMPUTERNAME
     $hostname = $hostname.Replace('-','_')
 
@@ -10388,7 +10487,7 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
     $return = Install-WindowsFeature -name Multipath-IO -Restart
 }
 Install_MPIO_ssh
-Remove-Item -Path $MyInvocation.MyCommand.Source</pre>
+Remove-Item -Path $MyInvocation.MyCommand.Source</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -10398,9 +10497,10 @@ Remove-Item -Path $MyInvocation.MyCommand.Source</pre>
 </li>
 </ul>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>#Enable MPIO and Start iSCSI Service
+<pre>....
+#Enable MPIO and Start iSCSI Service
 Function PrepISCSI {
     $return = Enable-MSDSMAutomaticClaim -BusType iSCSI
     #Start iSCSI service with PowerShell using elevated privileges in Windows Servers
@@ -10476,7 +10576,8 @@ Create_igroup_vols_luns $fsxN
 Connect_iSCSI_to_SVM $TargetPortals
 Create_Partition_Format_Disks
 UnregisterTask
-Remove-Item -Path $MyInvocation.MyCommand.Source</pre>
+Remove-Item -Path $MyInvocation.MyCommand.Source
+....</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10493,47 +10594,71 @@ Remove-Item -Path $MyInvocation.MyCommand.Source</pre>
 <ul>
 <li>
 <p>Amazon FSx for NetApp ONTAP</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><a href="https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html</a></p>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Getting Started with FSx for NetApp ONTAP</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><a href="https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started.html</a></p>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Overview of the SnapCenter interface</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><a href="https://www.youtube.com/watch?v=lVEBF4kV6Ag&amp;t=0s" target="_blank" rel="noopener">https://www.youtube.com/watch?v=lVEBF4kV6Ag&amp;t=0s</a></p>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Tour through SnapCenter navigation pane options</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><a href="https://www.youtube.com/watch?v=_lDKt-koySQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_lDKt-koySQ</a></p>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Setup SnapCenter 4.0 for SQL Server plug-in</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><a href="https://www.youtube.com/watch?v=MopbUFSdHKE" target="_blank" rel="noopener">https://www.youtube.com/watch?v=MopbUFSdHKE</a></p>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>How to back up and restore databases using SnapCenter with SQL Server plug-in</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
 <p><a href="https://www.youtube.com/watch?v=K343qPD5_Ys" target="_blank" rel="noopener">https://www.youtube.com/watch?v=K343qPD5_Ys</a></p>
 </div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>How to clone a database using SnapCenter with SQL Server plug-in</p>
-<div class="paragraph">
-<p><a href="https://www.youtube.com/watch?v=ogEc4DkGv1E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ogEc4DkGv1E</a></p>
-</div>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><a href="https://www.youtube.com/watch?v=ogEc4DkGv1E" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ogEc4DkGv1E</a></p>
 </div>
 </div>
 </div>
