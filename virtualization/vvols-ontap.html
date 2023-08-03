@@ -3753,6 +3753,54 @@
   
 
 
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/us-en/netapp-solutions/pdfs/sidebar/BlueXP_Backup_and_Recovery.pdf" 
+            
+          >
+            <img src="/us-en/netapp-solutions/images/pdf.png" alt="" width="16" height="16"/>
+            BlueXP Backup and Recovery
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/us-en/netapp-solutions/pdfs/sidebar/BlueXP_backup_and_recovery_for_VMs.pdf" 
+            
+          >
+            <img src="/us-en/netapp-solutions/images/pdf.png" alt="" width="16" height="16"/>
+            BlueXP backup and recovery for VMs
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
         </li>
       </ul>
     
@@ -8407,6 +8455,31 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ncvs/ncvs-gc-additional-information.html">
         Additional information
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP Backup and Recovery"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> BlueXP Backup and Recovery</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP backup and recovery for VMs"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> BlueXP backup and recovery for VMs</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="3-2-1 Data Protection for VMware with SnapCenter Plug-in and BlueXP backup and recovery for VMs"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/bxp/bxp-scv-hybrid-solution.html">
+        3-2-1 Data Protection for VMware with SnapCenter Plug-in and BlueXP backup and recovery for VMs
       </a></li></ul></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="NetApp Hybrid Multicloud with Red Hat OpenShift"
@@ -9268,7 +9341,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-08-02 10:50:34 -0400">08/02/2023</time>
+    <time datetime="2023-08-03 08:46:16 -0400">08/03/2023</time>
     
   
 
@@ -9447,8 +9520,8 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maximum vVols size</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">62 TiB*</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">62 TiB*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">62 TiB<sup>1</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">62 TiB<sup>1</sup></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maximum number of vVols per FlexVol volume</p></td>
@@ -9457,17 +9530,17 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maximum number of vVols per ONTAP node</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 12,288**</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 12,288<sup>2</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">50 billion</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maximum number of vVols per ONTAP pair</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 24,576**</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 24,576<sup>2</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">50 billion</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maximum number of vVols per ONTAP cluster</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 98,304**</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Up to 98,304<sup>2</sup></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No specific cluster limit</p></td>
 </tr>
 <tr>
@@ -9477,108 +9550,84 @@
 </tr>
 </tbody>
 </table>
-<div class="ulist">
-<ul>
-<li>
-<p>Size limit based on ASA systems or AFF and FAS systems running ONTAP 9.12.1P2 and later.</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Number of SAN vVols (NVMe namespaces or LUNs) varies based on platform. Always check the <a href="https://hwu.netapp.com/">NetApp Hardware Universe</a> for updated limits on numbers and sizes of LUNs and files.</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
+<div class="paragraph">
+<p>NOTE:<br>
+<sup>1</sup> Size limit based on ASA systems or AFF and FAS systems running ONTAP 9.12.1P2 and later.</p>
 </div>
 <div class="paragraph">
-<p><strong>Best Practices</strong></p>
+<p><sup>2</sup> Number of SAN vVols (NVMe namespaces or LUNs) varies based on platform. Always check the <a href="https://hwu.netapp.com/">NetApp Hardware Universe</a> for updated limits on numbers and sizes of LUNs and files.</p>
+</div>
+<div class="paragraph">
+<p><strong>Best Practices for using vVols with ONTAP</strong></p>
 </div>
 <div class="paragraph">
 <p>Using ONTAP vVols with vSphere is simple and follows published vSphere methods (see Working with Virtual Volumes under vSphere Storage in VMware documentation for your version of ESXi). Here are a few additional practices to consider in conjunction with ONTAP.</p>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Use ONTAP tools for VMware vSphere&#8217;s UI extensions or REST APIs to provision vVols datastores</strong> <strong>and Protocol Endpoints.</strong><br>
+While it’s possible to create vVols datastores with the general vSphere interface, using ONTAP tools will automatically create protocol endpoints as needed, and creates FlexVol volumes using ONTAP best practices and in compliance with your defined storage capability profiles. Simply right click on the host/cluster/datacenter, then select <em>ONTAP tools</em> and <em>Provision datastore</em>. From there simply choose the desired vVols options in the wizard.</p>
+</li>
+<li>
+<p><strong>Never store the ONTAP tools appliance or vCenter Server Appliance (VCSA) on a vVols datastore that they are managing.</strong><br>
+This can result in a “chicken and egg situation” if you need to reboot the appliances because they won’t be able to rebind their own vVols while they are rebooting. You may store them on a vVols datastore managed by a different ONTAP tools and vCenter deployment.</p>
+</li>
+<li>
+<p><strong>Avoid vVols operations across different ONTAP releases.</strong><br>
+Supported storage capabilities such as QoS, personality and more have changed in various releases of the VASA Provider, and some are dependent on ONTAP release. Using different releases in an ONTAP cluster or moving vVols between clusters with different releases can result in unexpected behavior or compliance alarms.</p>
+</li>
+<li>
+<p><strong>Zone your Fibre Channel fabric before using NVMe/FC or FCP for vVols.</strong><br>
+The ONTAP tools VASA provider takes care of managing FCP and iSCSI igroups as well as NVMe subsystems in ONTAP based on discovered initiators of managed ESXi hosts. However, it does not integrate with Fibre Channel switches to manage zoning. Zoning must be done according to best practices before any provisioning can take place. The following is an example of single initiator zoning to four ONTAP systems:</p>
 <div class="paragraph">
-<p>Best Practices for using vVols with ONTAP.</p>
+<p>Single initiator zoning:</p>
 </div>
-<table class="tableblock frame-all grid-rows stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Use ONTAP tools for VMware vSphere&#8217;s UI extensions or REST APIs to provision vVols datastores</strong> <strong>and Protocol Endpoints.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">While it’s possible to create vVols datastores with the general vSphere interface, using ONTAP tools will automatically create protocol endpoints as needed, and creates FlexVol volumes using ONTAP best practices and in compliance with your defined storage capability profiles. Simply right click on the host/cluster/datacenter, then select <em>ONTAP tools</em> and <em>Provision datastore</em>. From there simply choose the desired vVols options in the wizard.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Never store the ONTAP tools appliance or vCenter Server Appliance (VCSA) on a vVols datastore that they are managing.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This can result in a “chicken and egg situation” if you need to reboot the appliances because they won’t be able to rebind their own vVols while they are rebooting. You may store them on a vVols datastore managed by a different ONTAP tools and vCenter deployment.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Avoid vVols operations across different ONTAP releases.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supported storage capabilities such as QoS, personality and more have changed in various releases of the VASA Provider, and some are dependent on ONTAP release. Using different releases in an ONTAP cluster or moving vVols between clusters with different releases can result in unexpected behavior or compliance alarms.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Zone your Fibre Channel fabric before using NVMe/FC or FCP for vVols.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The ONTAP tools VASA provider takes care of managing FCP and iSCSI igroups as well as NVMe subsystems in ONTAP based on discovered initiators of managed ESXi hosts. However, it does not integrate with Fibre Channel switches to manage zoning. Zoning must be done according to best practices before any provisioning can take place. The following is an example of single initiator zoning to four ONTAP systems:<br>
-<br>
-Single initiator zoning:<br>
-<br>
-<span class="image"><img src="./../media/vvols-image7.gif" alt="Single initiator zoning withs four nodes" width="400"></span><br>
-<br>
-Refer to the following documents for more best practices:<br>
-<br>
-<a href="https://www.netapp.com/media/10680-tr4080.pdf"><em>TR-4080 Best practices for modern SAN ONTAP 9</em></a><br>
-<br>
-<a href="https://www.netapp.com/pdf.html?item=/media/10681-tr4684.pdf"><em>TR-4684 Implementing and configuring modern SANs with NVMe-oF</em></a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Plan your backing FlexVols according to your needs.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">It can be desirable to add several backing volumes to your vVols datastore to distribute workload across the ONTAP cluster, to support different policy options, or to increase the number of allowed LUNs or files. However, if maximum storage efficiency is required, then place all your backing volumes on a single aggregate. Or if maximum cloning performance is required, then consider using a single FlexVol volume and keeping your templates or content library in the same volume. The VASA Provider offloads many vVols storage operations to ONTAP, including migration, cloning and snapshots. When this is done within a single FlexVol volume, space efficient file clones are used and are almost instantly available. When this is done across FlexVol volumes, the copies are quickly available and use inline deduplication and compression, but maximum storage efficiency may not be recovered until background jobs run on volumes using background deduplication and compression. Depending on the source and destination, some efficiency may be degraded.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Keep Storage Capability Profiles (SCPs) simple.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avoid specifying capabilities that aren’t required by setting them to Any. This will minimize problems when selecting or creating FlexVol volumes. For example, with VASA Provider 7.1 and earlier, if compression is left at the default SCP setting of No, it will attempt to disable compression, even on an AFF system.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Use the default SCPs as example templates to create your own.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The included SCPs are suitable for most general-purpose uses, but your requirements may be different.<br>
-<br>
-<strong>Consider using Max IOPS to control unknown or test VMs.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">First available in VASA Provider 7.1, Max IOPS can be used to limit IOPS to a specific vVol for an unknown workload to avoid impact on other, more critical workloads. See Table 4 for more on performance management.<br>
-<br>
-<strong>Ensure you have sufficient data LIFs.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Create at least two LIFs per node per HA pair. More may be required based on your workload.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Follow all protocol best practices.</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Refer to NetApp and VMware’s other best practice guides specific to the protocol you’ve selected. In general, there are not any changes other than those already mentioned.<br>
-<br>
-Example network configuration using vVols over NFS v3:<br>
-<br>
-<span class="image"><img src="./../media/vvols-image8.png" alt="network configuration using vVols over NFS v3" width="500"></span></p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/vvols-image7.gif" alt="Single initiator zoning withs four nodes" width="400"></span></p>
+</div>
+<div class="paragraph">
+<p>Refer to the following documents for more best practices:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.netapp.com/media/10680-tr4080.pdf"><em>TR-4080 Best practices for modern SAN ONTAP 9</em></a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.netapp.com/pdf.html?item=/media/10681-tr4684.pdf"><em>TR-4684 Implementing and configuring modern SANs with NVMe-oF</em></a></p>
+</div>
+</li>
+<li>
+<p><strong>Plan your backing FlexVols according to your needs.</strong><br>
+It can be desirable to add several backing volumes to your vVols datastore to distribute workload across the ONTAP cluster, to support different policy options, or to increase the number of allowed LUNs or files. However, if maximum storage efficiency is required, then place all your backing volumes on a single aggregate. Or if maximum cloning performance is required, then consider using a single FlexVol volume and keeping your templates or content library in the same volume. The VASA Provider offloads many vVols storage operations to ONTAP, including migration, cloning and snapshots. When this is done within a single FlexVol volume, space efficient file clones are used and are almost instantly available. When this is done across FlexVol volumes, the copies are quickly available and use inline deduplication and compression, but maximum storage efficiency may not be recovered until background jobs run on volumes using background deduplication and compression. Depending on the source and destination, some efficiency may be degraded.</p>
+</li>
+<li>
+<p><strong>Keep Storage Capability Profiles (SCPs) simple.</strong><br>
+Avoid specifying capabilities that aren’t required by setting them to Any. This will minimize problems when selecting or creating FlexVol volumes. For example, with VASA Provider 7.1 and earlier, if compression is left at the default SCP setting of No, it will attempt to disable compression, even on an AFF system.</p>
+</li>
+<li>
+<p><strong>Use the default SCPs as example templates to create your own.</strong><br>
+The included SCPs are suitable for most general-purpose uses, but your requirements may be different.</p>
+</li>
+<li>
+<p><strong>Consider using Max IOPS to control unknown or test VMs.</strong><br>
+First available in VASA Provider 7.1, Max IOPS can be used to limit IOPS to a specific vVol for an unknown workload to avoid impact on other, more critical workloads. See Table 4 for more on performance management.</p>
+</li>
+<li>
+<p><strong>Ensure you have sufficient data LIFs.</strong><br>
+Create at least two LIFs per node per HA pair. More may be required based on your workload.</p>
+</li>
+<li>
+<p><strong>Follow all protocol best practices.</strong><br>
+Refer to NetApp and VMware’s other best practice guides specific to the protocol you’ve selected. In general, there are not any changes other than those already mentioned.</p>
+<div class="paragraph">
+<p>Example network configuration using vVols over NFS v3:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/vvols-image8.png" alt="network configuration using vVols over NFS v3" width="500"></span></p>
+</div>
+</li>
+</ol>
+</div>
 </div>
 </div>
 

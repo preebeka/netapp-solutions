@@ -3755,6 +3755,54 @@
   
 
 
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/us-en/netapp-solutions/pdfs/sidebar/BlueXP_Backup_and_Recovery.pdf" 
+            
+          >
+            <img src="/us-en/netapp-solutions/images/pdf.png" alt="" width="16" height="16"/>
+            BlueXP Backup and Recovery
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/us-en/netapp-solutions/pdfs/sidebar/BlueXP_backup_and_recovery_for_VMs.pdf" 
+            
+          >
+            <img src="/us-en/netapp-solutions/images/pdf.png" alt="" width="16" height="16"/>
+            BlueXP backup and recovery for VMs
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
         </li>
       </ul>
     
@@ -8407,6 +8455,31 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ncvs/ncvs-gc-additional-information.html">
         Additional information
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP Backup and Recovery"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> BlueXP Backup and Recovery</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP backup and recovery for VMs"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> BlueXP backup and recovery for VMs</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="3-2-1 Data Protection for VMware with SnapCenter Plug-in and BlueXP backup and recovery for VMs"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/bxp/bxp-scv-hybrid-solution.html">
+        3-2-1 Data Protection for VMware with SnapCenter Plug-in and BlueXP backup and recovery for VMs
       </a></li></ul></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="NetApp Hybrid Multicloud with Red Hat OpenShift"
@@ -9268,7 +9341,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-08-02 10:50:34 -0400">08/02/2023</time>
+    <time datetime="2023-08-03 08:46:16 -0400">08/03/2023</time>
     
   
 
@@ -9499,19 +9572,11 @@ Overcommitment of storage must be carefully considered and managed for a mission
 </tr>
 </table>
 </div>
-<table class="tableblock frame-all grid-rows stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Best Practices</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
+<div class="paragraph">
+<p><strong>Best Practices</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>For optimal storage performance, provision file-system capacity to 1.35x times the size of total database usage.</p>
 </li>
@@ -9521,11 +9586,8 @@ Overcommitment of storage must be carefully considered and managed for a mission
 <li>
 <p>Make sure to set Cloudwatch and other monitoring tool alerts so that people are contacted with enough time to react as storage is filled.</p>
 </li>
-</ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+</ol>
+</div>
 </div>
 </details>
 </div>
@@ -9568,16 +9630,10 @@ Overcommitment of storage must be carefully considered and managed for a mission
 </li>
 <li>
 <p>Create volumes by following the step listed in <a href="https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/creating-volumes.html" target="_blank" rel="noopener">Creating a volume on FSx for NetApp ONTAP</a>.</p>
-<table class="tableblock frame-all grid-rows stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Best practices</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<div class="paragraph">
+<p><strong>Best practices</strong></p>
+</div>
+<div class="ulist">
 <ul>
 <li>
 <p>Disable storage Snapshot copy schedules and retention policies. Instead, use NetApp SnapCenter to coordinate Snapshot copies of the SQL Server data and log volumes.</p>
@@ -9592,10 +9648,7 @@ Overcommitment of storage must be carefully considered and managed for a mission
 <p>Tempdb is a system database used by Microsoft SQL Server as a temporary workspace, especially for I/O intensive DBCC CHECKDB operations. Therefore, place this database on a dedicated volume. In large environments in which volume count is a challenge, you can consolidate tempdb into fewer volumes and store it in the same volume as other system databases after careful planning. Data protection for tempdb is not a high priority because this database is recreated every time Microsoft SQL Server is restarted.</p>
 </li>
 </ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+</div>
 </li>
 <li>
 <p>Use the following SSH command to create volumes:</p>
@@ -9705,18 +9758,10 @@ foreach ($TargetPortal in $TargetPortals) {New-IscsiTargetPortal -TargetPortalAd
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image10.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-<table class="tableblock frame-all grid-rows stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Best Practices</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<div class="paragraph">
+<p><strong>Best practices</strong></p>
+</div>
+<div class="ulist">
 <ul>
 <li>
 <p>Configure five iSCSI sessions per target interface for optimal performance.</p>
@@ -9728,10 +9773,7 @@ foreach ($TargetPortal in $TargetPortals) {New-IscsiTargetPortal -TargetPortalAd
 <p>Make sure that the allocation unit size is set to 64K for partitions when formatting the LUNs</p>
 </li>
 </ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+</div>
 </li>
 <li>
 <p>Run the following PowerShell command to make sure that the iSCSI session is persisted.</p>
@@ -9871,8 +9913,7 @@ Minimum space for repository: 10GB</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>For detailed information, refer to <a href="https://docs.netapp.com/us-en/snapcenter/install/reference_space_and_sizing_requirements.html">space and sizing requirements</a>.<br>
-For detailed information, refer to <a href="https://docs.netapp.com/us-en/snapcenter/install/reference_space_and_sizing_requirements.html">space and sizing requirements</a>.</p>
+<p>For detailed information, refer to <a href="https://docs.netapp.com/us-en/snapcenter/install/reference_space_and_sizing_requirements.html">space and sizing requirements</a>.</p>
 </div>
 <div class="paragraph">
 <p>For version compatibility, see the <a href="https://mysupport.netapp.com/matrix/" target="_blank" rel="noopener">NetApp Interoperability Matrix Tool</a>.</p>
@@ -9888,19 +9929,11 @@ For detailed information, refer to <a href="https://docs.netapp.com/us-en/snapce
 <div class="paragraph">
 <p><span class="image"><img src="./../media/sql-awsec2-image13.png" alt="Error: Missing Graphic Image"></span></p>
 </div>
-<table class="tableblock frame-all grid-rows stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Best practices</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
+<div class="paragraph">
+<p><strong>Best practices</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Place databases with I/O-intensive queries or with large database size (say 500GB or more) on a separate volume for faster recovery. This volume should also be backed up by separate jobs.</p>
 </li>
@@ -9919,11 +9952,8 @@ For detailed information, refer to <a href="https://docs.netapp.com/us-en/snapce
 <li>
 <p>For Microsoft SQL Server Availability Group setup, place the data and log files for replicas in an identical folder structure on all nodes.</p>
 </li>
-</ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+</ol>
+</div>
 <div class="paragraph">
 <p>In addition to the performance benefit of segregating the user database layout into different volumes, the database also significantly affects the time required to back up and restore. Having separate volumes for data and log files significantly improves the restore time as compared to a volume hosting multiple user data files. Similarly, user databases with a high I/O intensive application are prone to an increase in the backup time. A more detailed explanation about backup and restore practices is provided later in this document.</p>
 </div>
@@ -10050,16 +10080,10 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 <div class="paragraph">
 <p>After placing the database and log files on the FSx ONTAP LUNs, SnapCenter can be used to back up the databases. The following processes are used to create a full backup.</p>
 </div>
-<table class="tableblock frame-all grid-rows stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Best Practices</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<div class="paragraph">
+<p><strong>Best Practices</strong></p>
+</div>
+<div class="ulist">
 <ul>
 <li>
 <p>In SnapCenter terms, RPO can be identified as the backup frequency, for example, how frequently you want to schedule the backup so that you can reduce the loss of data to up to few minutes. SnapCenter allows you to schedule backups as frequently as every five minutes. However, there might be a few instances in which a backup might not complete within five minutes during peak transaction times or when the rate of change of data is more in the given time. A best practice is to schedule frequent transaction log backups instead of full backups.</p>
@@ -10069,12 +10093,6 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 </li>
 <li>
 <p>Use a resource group for a backup configuration for Snapshot optimization and the number of jobs to be managed.</p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -10109,16 +10127,13 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 </li>
 </ol>
 </div>
-<table class="tableblock frame-all grid-rows stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Best Practices</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Best Practices</strong></p>
+</div>
+<div class="ulist">
 <ul>
 <li>
 <p>Backup the transaction log backup from SnapCenter so that during the restoration process, SnapCenter can read all the backup files and restore in sequence automatically.</p>
@@ -10127,10 +10142,7 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 <p>If third party products are used for backup, select Copy backup in SnapCenter to avoid log sequence issues, and test the restore functionality before rolling into production.</p>
 </li>
 </ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+</div>
 </div>
 </details>
 <details>
@@ -10190,17 +10202,11 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 <div class="paragraph">
 <p>In addition to the full backup, NetApp recommends that you configure a transaction log backup for critical databases. Make sure that the database property is set to full recovery model.</p>
 </div>
-<table class="tableblock frame-all grid-rows stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Best practices</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
+<div class="paragraph">
+<p><strong>Best practices</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Do not include the tempdb database in a backup because the data it contains is temporary. Place tempdb on a LUN or an SMB share that is in a storage system volume in which Snapshot copies will not be created.</p>
 </li>
@@ -10228,11 +10234,8 @@ SnapCenter uses a host log directory to store transaction log backup data. This 
 <li>
 <p>Create a separate policy to manage and back up system databases at least once a week.</p>
 </li>
-</ul>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+</ol>
+</div>
 </div>
 </details>
 <details>

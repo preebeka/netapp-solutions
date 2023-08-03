@@ -260,7 +260,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/about.html</loc>
       
-      <lastmod>2023-05-31T19:01:53-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -1016,7 +1016,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/aws_postgres_fsx_ec2_hadr.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -1058,7 +1058,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/azure/azure-migrate-vmware-hcx.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -1234,6 +1234,13 @@
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/baremetal-anthos/bmanthos_solution_requirements.html</loc>
       
       <lastmod>2023-05-13T14:59:07-04:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/bxp/bxp-scv-hybrid-solution.html</loc>
+      
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -1709,14 +1716,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/gcp-app-dr-sc-cvo-veeam.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/netapp-solutions/</loc>
+      <loc>https://docs.netapp.com/us-en/netapp-solutions/ehc/gcp/gcp-app-dr-sc-cvs-veeam.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -2003,14 +2010,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/vdi-vds/hcvdivds_single_server_load_test_with_login_vsi.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/vdi-vds/hcvdivds_solutions_for_industry.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -2402,7 +2409,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/marketing_overview.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -3473,14 +3480,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/scvmware-security-secure-development-activities.html</loc>
       
-      <lastmod>2023-06-28T12:31:42-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions//search.html</loc>
       
-      <lastmod>2023-08-02T10:50:50-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:33-04:00</lastmod>
       
     </url>
   
@@ -3536,7 +3543,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/databases/sql-aws-ec2.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -3655,7 +3662,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/tools-vmware-secure-development-activities.html</loc>
       
-      <lastmod>2023-06-28T12:31:42-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -3851,14 +3858,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_demos_videos.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsphere_ontap_auto_block.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -4019,7 +4026,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vsrm-ontap9_replication_topologies.html</loc>
       
-      <lastmod>2023-05-04T10:08:27-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
@@ -4145,35 +4152,35 @@
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/containers/tanzu_with_netapp/vtwn_videos_and_demos.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vvols-deploy.html</loc>
       
-      <lastmod>2023-05-24T18:45:30-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vvols-ontap.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vvols-overview.html</loc>
       
-      <lastmod>2023-08-02T10:50:34-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/netapp-solutions/virtualization/vvols-protect.html</loc>
       
-      <lastmod>2023-05-24T18:45:30-04:00</lastmod>
+      <lastmod>2023-08-03T08:46:16-04:00</lastmod>
       
     </url>
   

@@ -3753,6 +3753,54 @@
   
 
 
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/us-en/netapp-solutions/pdfs/sidebar/BlueXP_Backup_and_Recovery.pdf" 
+            
+          >
+            <img src="/us-en/netapp-solutions/images/pdf.png" alt="" width="16" height="16"/>
+            BlueXP Backup and Recovery
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/us-en/netapp-solutions/pdfs/sidebar/BlueXP_backup_and_recovery_for_VMs.pdf" 
+            
+          >
+            <img src="/us-en/netapp-solutions/images/pdf.png" alt="" width="16" height="16"/>
+            BlueXP backup and recovery for VMs
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
         </li>
       </ul>
     
@@ -8407,6 +8455,31 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/ncvs/ncvs-gc-additional-information.html">
         Additional information
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP Backup and Recovery"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> BlueXP Backup and Recovery</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP backup and recovery for VMs"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> BlueXP backup and recovery for VMs</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="3-2-1 Data Protection for VMware with SnapCenter Plug-in and BlueXP backup and recovery for VMs"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/netapp-solutions/ehc/bxp/bxp-scv-hybrid-solution.html">
+        3-2-1 Data Protection for VMware with SnapCenter Plug-in and BlueXP backup and recovery for VMs
       </a></li></ul></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="NetApp Hybrid Multicloud with Red Hat OpenShift"
@@ -9268,7 +9341,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-04 10:08:27 -0400">05/04/2023</time>
+    <time datetime="2023-08-03 08:46:16 -0400">08/03/2023</time>
     
   
 
@@ -9307,21 +9380,16 @@
 </li>
 </ul>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Best Practice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To determine supportability, keep this rule in mind: to protect a VM by using SRM and the NetApp SRA, all parts of the VM must exist on only one SVM. This rule applies at both the protected site and the recovery site.</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p><strong>Best Practice</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To determine supportability, keep this rule in mind: to protect a VM by using SRM and the NetApp SRA, all parts of the VM must exist on only one SVM. This rule applies at both the protected site and the recovery site.</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -9419,21 +9487,16 @@ The NetApp SRA supports the <code>mirror-vault</code> policy type.
 <div class="paragraph">
 <p>For the latest information about SnapMirror and SnapVault for ONTAP 9, see <a href="https://www.netapp.com/media/17229-tr4015.pdf?v=127202175503P" target="_blank" rel="noopener">TR-4015 SnapMirror Configuration Best Practice Guide for ONTAP 9.</a></p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Best Practice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">If SnapVault and SRM are used in the same environment, NetApp recommends using a SnapMirror to SnapVault cascade configuration in which SnapVault backups are normally performed from the SnapMirror destination at the DR site. In the event of a disaster, this configuration makes the primary site inaccessible. Keeping the SnapVault destination at the recovery site allows SnapVault backups to be reconfigured after failover so that SnapVault backups can continue while operating at the recovery site.</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p><strong>Best Practice</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If SnapVault and SRM are used in the same environment, NetApp recommends using a SnapMirror to SnapVault cascade configuration in which SnapVault backups are normally performed from the SnapMirror destination at the DR site. In the event of a disaster, this configuration makes the primary site inaccessible. Keeping the SnapVault destination at the recovery site allows SnapVault backups to be reconfigured after failover so that SnapVault backups can continue while operating at the recovery site.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p>In a VMware environment, each datastore has a universal unique identifier (UUID), and each VM has a unique managed object ID (MOID). These IDs are not maintained by SRM during failover or failback. Because datastore UUIDs and VM MOIDs are not maintained during failover by SRM, any applications that depend on these IDs must be reconfigured after SRM failover. An example application is NetApp Active IQ Unified Manager, which coordinates SnapVault replication with the vSphere environment.</p>
 </div>
@@ -9471,21 +9534,16 @@ The NetApp SRA supports the <code>mirror-vault</code> policy type.
 <div class="paragraph">
 <p>VMware SRM and NetApp SRA support the use of the FC protocol at one site and the iSCSI protocol at the other site. It does not support having a mix of FC-attached datastores and iSCSI-attached datastores in the same ESXi host or in different hosts in the same cluster, however. This configuration is not supported with SRM because, during the SRM failover or test failover, SRM includes all FC and iSCSI initiators in the ESXi hosts in the request.</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Best Practice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SRM and SRA support mixed FC and iSCSI protocols between the protected and recovery sites. However, each site should be configured with only one protocol, either FC or iSCSI, not both protocols at the same site. If a requirement exists to have both FC and iSCSI protocols configured at the same site, NetApp recommends that some hosts use iSCSI and other hosts use FC. NetApp also recommends in this case that SRM resource mappings be set up so that the VMs are configured to fail over into one group of hosts or the other.</p></td>
-</tr>
-</tbody>
-</table>
+<div class="paragraph">
+<p><strong>Best Practice</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>SRM and SRA support mixed FC and iSCSI protocols between the protected and recovery sites. However, each site should be configured with only one protocol, either FC or iSCSI, not both protocols at the same site. If a requirement exists to have both FC and iSCSI protocols configured at the same site, NetApp recommends that some hosts use iSCSI and other hosts use FC. NetApp also recommends in this case that SRM resource mappings be set up so that the VMs are configured to fail over into one group of hosts or the other.</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 
