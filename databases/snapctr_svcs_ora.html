@@ -731,7 +731,7 @@
           
           <a target="_blank" 
             
-              href="/us-en/netapp-solutions/pdfs/sidebar/Setup.pdf" 
+              href="/us-en/netapp-solutions/pdfs/sidebar/MLRun_Setup.pdf" 
             
           >
             <img src="/us-en/netapp-solutions/images/pdf.png" alt="" width="16" height="16"/>
@@ -935,7 +935,7 @@
           
           <a target="_blank" 
             
-              href="/us-en/netapp-solutions/pdfs/sidebar/Setup.pdf" 
+              href="/us-en/netapp-solutions/pdfs/sidebar/Setup_Procedure.pdf" 
             
           >
             <img src="/us-en/netapp-solutions/images/pdf.png" alt="" width="16" height="16"/>
@@ -3980,8 +3980,6 @@
 
 
 
-
-
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -4744,7 +4742,7 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Setup"
+      data-pdf-filename="HGC Setup"
       data-li-level="5#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/netapp-solutions/ai/nvaie_ngc_setup.html">
@@ -4978,7 +4976,7 @@
         Network Device Failure Prediction Use Case Summary
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Setup"
+      data-pdf-filename="MLRun Setup"
       data-li-level="4" 
       class="subfolders "
     ><a href="/us-en/netapp-solutions/ai/mlrun_setup_overview.html">
@@ -5263,7 +5261,7 @@
         Click-through rate prediction use case summary
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Setup"
+      data-pdf-filename="Setup Procedure"
       data-li-level="4" 
       class="subfolders "
     ><a href="#">
@@ -8656,13 +8654,6 @@
       </a>
       <ul style="display: none;">
         <li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Get Started With NetApp and VMware"
-      data-li-level="2#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/netapp-solutions/virtualization/netapp-vmware.html">
-        Get Started With NetApp and VMware
-      </a></li><li 
       data-pdf-exists="false" 
       data-pdf-filename="What's New for VMware Virtualization"
       data-li-level="2#" 
@@ -9350,7 +9341,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-08-13 14:42:18 +0000">08/13/2023</time>
+    <time datetime="2023-08-14 19:28:28 +0000">08/14/2023</time>
     
   
 
@@ -9758,6 +9749,54 @@
 <li>
 <p>Review and <strong>Add</strong>.<br>
 <span class="image"><img src="./../media/snapctr_svcs_credential_08-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</li>
+<li>
+<p>First, from AWS EC2 console, create a role in <strong>Identity and Access Management (IAM)</strong> menu <strong>Roles</strong>, <strong>Create role</strong> to start role creation workflow.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/snapctr_svcs_credential_01-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</div>
+</li>
+<li>
+<p>In <strong>Select trusted entity</strong> page, choose <strong>AWS account</strong>, <strong>Another AWS account</strong>, and paste in the BlueXP account ID, which can be retrieved from BlueXP console.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/snapctr_svcs_credential_02-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</div>
+</li>
+<li>
+<p>Filter permission policies by fsx and add <strong>Permissions policies</strong> to the role.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/snapctr_svcs_credential_03-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</div>
+</li>
+<li>
+<p>In <strong>Role details</strong> page, name the role, add a description, then click <strong>Create role</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/snapctr_svcs_credential_04-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</div>
+</li>
+<li>
+<p>Back to BlueXP console, click on setting icon on top right corner of the console to open <strong>Account credentials</strong> page, click <strong>Add credentials</strong> to start credential configuration workflow.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/snapctr_svcs_credential_05-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</div>
+</li>
+<li>
+<p>Choose credential location as - <strong>Amazon Web Services - BlueXP</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/snapctr_svcs_credential_06-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</div>
+</li>
+<li>
+<p>Define AWS credentials with proper <strong>Role ARN</strong>, which can be retrieved from AWS IAM role created in step one above. BlueXP <strong>account ID</strong>, which is used for creating AWS IAM role in step one.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/snapctr_svcs_credential_07-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</div>
+</li>
+<li>
+<p>Review and <strong>Add</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./../media/snapctr_svcs_credential_08-aws.png" alt="Screenshot showing this step in the GUI."></span></p>
+</div>
 </li>
 </ol>
 </div>
