@@ -46,7 +46,7 @@ image:vsrm-ontap9_image10.png[Error: Missing Graphic Image]
 
 == Supported Array Manager layouts
 
-When you use array-based replication (ABR) in SRM, protection groups are isolated to a single array pair, as shown in the following screenshot. In this scenario, `SVM1` and `SVM2` are peered with `SVM3` and `SVM4` at the recovery site. However, you can select only one of the two array pairs when you create a protection group.
+When you use array-based replication (ABR) in SRM, protection groups are isolated to a single array pair, as shown in the following screenshot. In this scenario, `SVM-A1` and `SVM-A2` are peered with `SVM-B1` and `SVM-B2` respectively at the recovery site. However, you can select only one of the two array pairs when you create a protection group.
 
 image:vsrm-ontap9_image11.png[Error: Missing Graphic Image]
 
